@@ -1,0 +1,78 @@
+/*responsive for mobile*/
+@media  screen and (max-width:688px) {
+   main,{
+    display: none;
+   }
+   .primary-btn{
+    padding: 14px;
+    font-size: 13px;
+   }
+   
+   nav{
+    flex-direction: column;
+    gap:0;
+   }
+   nav ul{
+    flex-direction: column;
+    gap: 34px;
+    padding: 0;
+   }
+   .banner img{
+    width: 338px;
+    height: 184px;
+   }
+   .banner-discription h2{
+    font-size: 34px;
+   }
+   
+   .feature-quick-list-container{
+    flex-direction: column;
+    text-align: center;
+   } 
+   .feature-quick-list-container li{
+    text-align: left;
+   }
+   .feature-quick-list-container button{
+    position: relative;
+    left: -5.8em;
+   }
+
+   .feature-quick-list-photos{
+    grid-template-columns: repeat(1,1fr);
+   }
+   .features-container{
+    flex-direction: column;
+    gap: 10px;
+   }
+   .experience button{
+    left: 24%;
+    top: 574%;
+    width: 210px;
+    height: 107px;
+    padding: 30px;
+   }
+   .experience h2{
+    font-size: 40px;
+    margin-top: -14px;
+   }
+   .experience p{
+    font-size: 18px;
+    margin-top: -27px;
+   }
+   .dashboard-container,.review-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   }
+   .sponsor-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+   .footer p{
+    padding: 0;
+    font-size: 11px;
+   }
+}

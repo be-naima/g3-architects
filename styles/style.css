@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
 
+*{
+  font-family: Work Sans;
+}
 .primary-space{
   margin-top: 85px;
 }
@@ -14,6 +17,11 @@
   border: none;
   color: #ffffff;
 }
+.primary-btn:hover{
+  border: 2px solid #ff900e;
+  background-color: #f8b76c74;
+  color: #ff900e;
+ }
 header{
   background-color: rgba(255, 144, 14, 0.1);
 
@@ -25,7 +33,7 @@ nav{
    align-items: center;
 }
 
-nav h2,.feature-quick-list-discription h2,.features h2,.facts h2,.sponsors h2{
+nav h2,.feature-quick-list-discription h2,.features h2,.facts h2,.sponsors h2,.review-title{
   font-weight: 700;
   font-size: 45px;
   color: #131313;
@@ -56,7 +64,7 @@ nav ul li{
   line-height: 75px;
   color: #131313;
 }
-.banner-discription p,.feature-quick-list-discription p,.features p,.facts p,.sponsors p{
+.banner-discription p,.feature-quick-list-discription li,.features p,.facts p,.sponsors p{
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -84,6 +92,16 @@ main{
   gap: 73px;
   justify-content: center;
   align-items: center;
+}
+.feature-quick-list-container button{
+  position: relative;
+  left: 4%;
+ }
+.feature-quick-list-discription i{
+  color: #FF900E;
+}
+.feature-quick-list-discription li{
+  list-style: none;
 }
 .feature-quick-list-photos img{
   height: 342px;
@@ -113,26 +131,30 @@ main{
   margin-bottom: 40px;
   padding-right: 20px;
 }
+.feature-box h3{
+  padding-bottom: 10px;
+}
 .features img{
   height: 600px;
   width: 100px;
 }
-.experience{
+.experience button{
   padding: 40px;
   background-color: #FF900E;
   color: white;
-  width: 250px;
-  height: 90px;
+  width:300px;
+  height: 140px;
   border-radius: 8px;
+  border: none;
   position: absolute;
   left:40% ;
-  top: 435% ;
+  top: 470% ;
   text-align: center;
 }
 .experience h2{
   font-weight: 700;
-  font-size: 65px;
-  margin-top: -4px;
+  font-size: 60px;
+  margin-top: -19px;
 }
 .experience p{
   font-weight: 500;
@@ -153,6 +175,13 @@ main{
   justify-content: center;
   align-items: center; 
   margin-top: 70px;
+  transition: all 0.9s  linear;
+}
+.dashboard:hover{
+  background-color:#FF900E;
+  width: 242px;
+  height: 242px ;
+  border-radius: 50%;
 }
 .dashboard img{
   height: 45px;
@@ -161,7 +190,47 @@ main{
 .dashboard-container{
   display: flex;
   justify-content: space-around;
+  margin-bottom: 150px;
 
+}
+.review-container{
+  display: flex;
+  gap: 24px;
+  border: 3px solid #FF900E;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+.review{
+    height: 305px;
+    width: 228px;
+    box-shadow: 0 0 50px rgba(0, 0,0, 0.15);
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+}
+.review span{
+  color: blue;
+  font-weight: 500px;
+}
+.review p{
+  color: #727272;
+}
+.review img{
+  width: 25%;
+  background-color: rgba(100, 148, 237, 0.697);
+  border-radius: 50%;
+  border: 3px solid darkblue;
+  position: relative;
+  
+}
+.ratings{
+  color: #FF900E;
+  margin-top: 10px;
 }
 .sponsors{
   text-align: center;
